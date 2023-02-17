@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  /* colours */
+  --black: #171717;
+  --white: #fff;
+  --orange: #fa6e07;
+  --grey: #afafaf;
+  /* fonts */
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Secular One', sans-serif;
+  /* font weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--black);
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+}
+
+.button {
+  background: var(--orange);
+  color: var(--white);
+  padding: 2rem 3rem;
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: var(--semi-bold);
+  border-radius: 5rem;
+  transition: opacity .3s ease-in-out;
+}
+
+.button:hover {
+  opacity: .8;
+}
