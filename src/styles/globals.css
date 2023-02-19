@@ -34,6 +34,9 @@ a {
   --regular: 400;
   --medium: 500;
   --semi-bold: 600;
+  /* font-size */
+  --normal-font: 1.4rem;
+  --subtitle-font: 2.2rem;
 }
 
 body {

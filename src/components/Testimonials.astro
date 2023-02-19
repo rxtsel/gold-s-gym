@@ -1,0 +1,89 @@
+---
+import { Slider } from './Slider'
+---
+
+<section>
+  <h2>Nuestros <span>testimonios</span></h2>
+  <Slider client:load />
+</section>
+
+<style>
+
+  section {
+    padding: 0 2rem;
+  }
+
+  h2 {
+    font-size: var(--subtitle-font);
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  h2 span {
+    color: var(--orange);
+  }
+
+  :global(.mySwiper) {
+    width: 100%;
+    margin: 0 auto;
+    height: 40rem;
+    margin: 0 auto;
+  }
+
+  :global(.mySwiper .swiper-slide) {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+  }
+
+  :global(.mySwiper .profile) {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 0 / .1);
+  }
+
+  :global(.mySwiper .profile img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  :global(.mySwiper .name) {
+    font-size: 1.8rem;
+    font-weight: var(--medium);
+    margin-top: 2rem;
+  }
+
+  :global(.mySwiper .job) {
+    font-size: 1.4rem;
+    font-weight: var(--light);
+    margin-top: 1rem;
+    color: var(--orange);
+  }
+
+  :global(.mySwiper .description) {
+    font-size: 1.4rem;
+    font-weight: var(--light);
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  :global(.mySwiper .swiper-pagination-bullet) {
+    width: 1rem;
+    height: 1rem;
+    background: var(--white);
+  }
+
+  :global(.mySwiper .swiper-pagination-bullet-active) {
+    background: var(--orange);
+  }
+
+</style>

@@ -1,0 +1,23 @@
+[
+  {
+    "price": 9,
+    "img": "/img/card-1.png",
+    "month": 1,
+    "list": [10, 5, 1],
+    "link": "#"
+  },
+  {
+    "price": 39,
+    "img": "/img/card-2.png",
+    "month": 6,
+    "list": [60, 30, 6],
+    "link": "#"
+  },
+  {
+    "price": 99,
+    "img": "/img/card-3.png",
+    "month": 12,
+    "list": ["SIN LÍMITE", "SIN LÍMITE", "SIN LÍMITE"],
+    "link": "#"
+  }
+]

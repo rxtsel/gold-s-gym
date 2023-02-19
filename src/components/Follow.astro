@@ -1,0 +1,92 @@
+---
+import { AiFillFacebook ,AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai/index'
+---
+
+<section>
+  <h2>Síguenos <span>en</span></h2>
+  <p>Todas nuestras redes sociales para más información</p>
+
+  <ul class="social-icons">
+    <li title="facebook">
+      <a href="#">
+        <AiFillFacebook />
+        facebook
+      </a>
+    </li>
+    <li title="instagram">
+      <a href="#">
+        <AiFillInstagram />
+        instagram
+      </a>
+    </li>
+    <li title="twitter">
+      <a href="#">
+        <AiOutlineTwitter />
+        twitter
+      </a>
+    </li>
+  </ul>
+
+</section>
+
+<style>
+
+  section {
+    padding: 6rem 2rem;
+  }
+  
+  h2 {
+    font-size: var(--subtitle-font);
+    text-transform: uppercase;
+    color: var(--orange);
+    text-align: center;
+  }
+
+  h2 span {
+    color: var(--white);
+  }
+
+  p {
+    padding-top: 2rem;
+    font-size: var(--normal-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 2rem;
+    gap: 3rem;
+  }
+
+  .social-icons li {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    transition: opacity 0.3s ease;
+  }
+
+  .social-icons li:hover {
+    opacity: 0.7;
+  }
+
+  .social-icons li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    color: transparent;
+    text-decoration: none;
+  }
+
+  :global(.social-icons li a svg) {
+    color: var(--orange);
+    font-size: 5rem;
+  }
+
+</style>

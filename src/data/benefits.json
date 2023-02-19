@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "pesas",
+    "title": "nuevo equipamento",
+    "description": "Todas las máquinas de ejercicios y herramientas deportivas han sido sustituidas este año por otras nuevas."
+  },
+  {
+    "icon": "map",
+    "title": "buena ubicación",
+    "description": "Es fácil llegar tanto en transporte público como en coche."
+  },
+  {
+    "icon": "user",
+    "title": "buenos coach",
+    "description": "Los mejores entrenadores profesionales trabajan en nuestro gimnasio."
+  },
+  {
+    "icon": "price",
+    "title": "disponibilidad",
+    "description": "El coste de nuestros servicios no supera los precios medios del mercado, manteniendo la calidad."
+  }
+]

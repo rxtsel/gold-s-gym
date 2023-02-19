@@ -1,0 +1,76 @@
+---
+  import { BiDumbbell, BiMapPin, BiUserCheck, BiDollarCircle } from 'react-icons/bi/index'
+  import data from '../data/benefits.json'
+---
+
+<section>
+  <h2>Nuestras <span>prestaciones</span></h2>
+  <div class="grid">
+  {
+    data.map(({ icon, title, description }) => (
+      <article class="item">
+        {icon === 'pesas' && <BiDumbbell />}
+        {icon === 'map' && <BiMapPin />}
+        {icon === 'user' && <BiUserCheck />}
+        {icon === 'price' && <BiDollarCircle />}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </article>
+    ))
+  }
+  </div>
+</section>
+
+<style>
+  section {
+    padding: 0 1rem;
+    color: var(--white);
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: var(--subtitle-font);
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  h2 span {
+    color: var(--orange);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+  }
+
+  :global(.item svg) {
+    font-size: 7rem;
+    color: var(--grey);
+  }
+
+  .item h3 {
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: var(--light);
+    margin: 1.5rem 0;
+    color: var(--orange);
+  }
+
+  .item p {
+    font-size: var(--normal-font);
+    text-align: center;
+  }
+
+</style>

@@ -1,0 +1,39 @@
+---
+import data from '../data/gallery.json'
+---
+
+<section>
+  {
+    data.map(({img}) => (
+      <div class="item">
+        <img src={img} alt="puede ser una foto que se tomó en el gymnasio">
+      </div>
+    ))
+  } 
+</section>
+
+<style>
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    place-items: center;
+  }
+
+  .item {
+    max-width: 24.5rem;
+    max-height: 24.5rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+</style>

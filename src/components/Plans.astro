@@ -1,0 +1,149 @@
+---
+import data from '../data/plans.json'
+---
+
+<section>
+  <h2>Nuestros <span>planes</span></h2>
+  <div class="grid">
+    {
+      data.map(({price, img, month, list ,link}) => (
+        <div class="card">
+
+          <div class="img-content">
+            <p class="price">{price}<small>$</small></p>
+            <img src={img} alt="puede ser una imagen de una persona haciendo ejercicio">
+          </div>
+
+          <div class="month">
+            <span>{month}</span>
+            <p>{month > 1 ? 'Meses' : 'Mes'}</p>
+          </div>
+
+          <ul class="content">
+            <li>{list[0]} x GYM</li>
+            <li>{list[1]} x CROSSFIT</li>
+            <li>{list[2]} x FITNESS</li>
+          </ul>
+
+          <a href={link} class="button">SUSCRIBIRME</a>
+
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+
+  section {
+    padding: 8rem 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: var(--subtitle-font);
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 5rem;
+  }
+
+  span {
+    color: var(--orange);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+  }
+
+  .card {
+    background: #000;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--white);
+    position: relative;
+  }
+
+  .img-content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .price {
+    color: var(--white);
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .price small {
+    font-size: 2rem;
+  }
+
+  .img-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6.5rem;
+  }
+
+  .month span {
+    font-size: 3rem;
+    position: relative;
+    padding-top: 4rem;
+    z-index: 1;
+    color: var(--white);
+  }
+
+  .month span::before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: var(--orange);
+    z-index: -1;
+  }
+
+  .month p {
+    font-size: 1.6rem;
+    padding-top: 2.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--orange);
+  }
+
+  .card a {
+    margin: 2rem 0 4rem;
+    width: 100%;
+    max-width: 20rem;
+  }
+
+</style>
