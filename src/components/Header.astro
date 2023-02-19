@@ -8,13 +8,15 @@ import { ToggleMenu } from './ToggleMenu'
 
   <a class="logo" href="#">Golds's<span>Gym</span>.</a>
 
-  <a href="tel:1234546"><BiPhone /></a>
+  <a class="tel" href="tel:1234546"><BiPhone /></a>
 
   <nav>
     <a href="#">Nostros</a>
     <a href="#">Precios</a>
     <a href="#">Testimonios</a>
   </nav>
+
+  <a href="tel:1234567" class="telephone">+52 (01) 2345 678</a>
 
 </header>
 
@@ -27,6 +29,10 @@ import { ToggleMenu } from './ToggleMenu'
     z-index: 10;
     position: relative;
   } 
+
+  .telephone {
+    display: none;
+  }
 
   nav {
     position: absolute;
@@ -81,6 +87,43 @@ import { ToggleMenu } from './ToggleMenu'
   span {
     color: var(--white);
     font-weight: var(--regular);
+  }
+
+  @media (min-width: 768px) {
+
+    header {
+      justify-content: space-between;
+      max-width: 120rem;
+      margin: 0 auto;
+    }
+
+    :global(header svg) {
+      display: none;
+    } 
+
+    .telephone {
+      display: block;
+      font-size: 1.6rem;
+      transition: color 0.5s ease-in-out;
+    }
+
+    .telephone:hover {
+      color: var(--orange);
+    }
+
+    nav {
+      position: static;
+      height: unset;
+      transform: unset;
+      flex-direction: row;
+      max-width: max-content;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    nav a {
+      font-size: 1.6rem;
+    }
   }
 
 </style>
