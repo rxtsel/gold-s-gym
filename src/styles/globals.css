@@ -5,6 +5,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -22,7 +23,7 @@ a {
 
 :root {
   /* colours */
-  --black: #171717;
+  --black: #0E0E0E;
   --white: #fff;
   --orange: #fa6e07;
   --grey: #afafaf;
@@ -37,6 +38,13 @@ a {
   /* font-size */
   --normal-font: 1.4rem;
   --subtitle-font: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --normal-font: 1.8rem;
+    --subtitle-font: 4.4rem;
+  }
 }
 
 body {
@@ -66,4 +74,17 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 1rem;
 }
