@@ -68,6 +68,21 @@ body {
     filter: blur(15px);
     opacity: .2;
   }
+
+  body:after {
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    background: radial-gradient(circle, var(--orange) -129%,var(--black) 76%);
+    position: absolute;
+    bottom: -15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 0;
+    filter: blur(5px);
+    opacity: .15;
+  }
 }
 
 .button {
