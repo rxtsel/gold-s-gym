@@ -54,6 +54,22 @@ body {
   font-size: 1.6rem;
 }
 
+@media (min-width: 768px) {
+  body:before {
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    background: radial-gradient(circle, var(--orange) -129%,var(--black) 76%);
+    position: absolute;
+    top: -15rem;
+    left: 2rem;
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(15px);
+    opacity: .2;
+  }
+}
+
 .button {
   background: var(--orange);
   color: var(--white);
