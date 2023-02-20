@@ -81,7 +81,6 @@
     margin: 1rem 0;
   }
 
-  /* change color to bullets */
   ul li::before {
     content: "•";
     color: var(--orange);
@@ -92,5 +91,74 @@
     margin-left: -1rem;
   }
 
+  @media (min-width: 768px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      padding-top: 6rem;
+      place-items: center;
+    }
+
+    .img {
+      height: 50rem;
+    }
+
+    .img img {
+      object-fit: contain;
+    }
+
+    article {
+      padding: 0 4rem;
+      z-index: 1;
+    }
+
+    article::before {
+      content: "";
+      width: 30rem;
+      height: 30rem;
+      background: radial-gradient(circle, var(--orange) -129%,var(--black) 76%);
+      position: absolute;
+      top: -5rem;
+      right: -15rem;
+      border-radius: 50%;
+      z-index: 1;
+      filter: blur(15px);
+      opacity: .15;
+    }
+
+    h2 {
+      margin-top: -2rem;
+    }
+
+    h2::before {
+      content: "VIDA";
+      font-size: 21.5rem;
+      font-weight: var(--light);
+      color: transparent;
+      font-family: var(--secondary-font);
+      background: linear-gradient(90deg,var(--primary-color) 0%,var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px var(--orange);
+      position: absolute;
+      top: -10rem;
+      right: -22rem;
+      z-index: -1;
+      opacity: .15;
+    }
+
+    h3 {
+      margin-top: 3rem;
+    }
+
+    p {
+      margin-top: 3rem;
+    }
+
+    ul {
+      margin-top: 3rem;
+    }
+  }
 
 </style>
