@@ -30,9 +30,11 @@ export function Slider () {
                   <img src={img} alt="puede ser una imagen del rostro de un cliente" />
                 </div>
 
-                <h2 className='name'>{name}</h2>
-                <small className='job'>{job}</small>
-                <p className='description'>{description}</p>
+                <div className="info">
+                  <h2 className='name'>{name}</h2>
+                  <small className='job'>{job}</small>
+                  <p className='description'>{description}</p>
+                </div>
 
               </div>
 

@@ -19,6 +19,7 @@ import { Slider } from './Slider'
     color: var(--white);
     text-align: center;
     margin-bottom: 1rem;
+    position: relative;
   }
 
   h2 span {
@@ -62,14 +63,14 @@ import { Slider } from './Slider'
   }
 
   :global(.mySwiper .job) {
-    font-size: 1.4rem;
+    font-size: var(--normal-font);
     font-weight: var(--light);
     margin-top: 1rem;
     color: var(--orange);
   }
 
   :global(.mySwiper .description) {
-    font-size: 1.4rem;
+    font-size: var(--normal-font);
     font-weight: var(--light);
     margin-top: 2rem;
     text-align: center;
@@ -84,6 +85,63 @@ import { Slider } from './Slider'
 
   :global(.mySwiper .swiper-pagination-bullet-active) {
     background: var(--orange);
+  }
+
+  @media (min-width: 768px) {
+
+    h2::before {
+      content: "CLIENTES";
+      font-size: 21.5rem;
+      font-weight: var(--light);
+      color: transparent;
+      font-family: var(--secondary-font);
+      background: linear-gradient(90deg,var(--primary-color) 0%,var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px var(--orange);
+      position: absolute;
+      top: 3rem;
+      left: 43rem;
+      z-index: 1;
+      opacity: .1;
+    }
+
+    :global(.mySwiper) {
+      max-width: 65ch;
+    }
+
+    :global(.mySwiper .content) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    :global(.mySwiper .content .name) {
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+    }
+
+    :global(.mySwiper .content .profile) {
+      width: 35rem;
+      height: 35rem;
+      margin-top: 3rem;
+    }
+
+    :global(.mySwiper .content .profile img) {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    :global(.mySwiper .content .info) {
+      margin-left: 2rem;
+      text-align: left;
+    }
+
+    :global(.mySwiper .content .description) {
+      text-align: left;
+    }
+
   }
 
 </style>
