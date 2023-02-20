@@ -11,10 +11,11 @@ export function ToggleMenu () {
 
   return (
     <button
-      className={`${styles.btn} ${isOpen ? 'active' : ''}`}
+      className={`burger ${styles.btn} ${isOpen ? 'active' : ''}`}
       onClick={handleClick}
     >
       {isOpen ? <BiX /> : <BiMenu />}
+      burger
     </button>
   )
 }

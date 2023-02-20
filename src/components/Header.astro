@@ -8,7 +8,7 @@ import { ToggleMenu } from './ToggleMenu'
 
   <a class="logo" href="#">Golds's<span>Gym</span>.</a>
 
-  <a class="tel" href="tel:1234546"><BiPhone /></a>
+  <a class="tel" href="tel:1234546"><BiPhone />tel</a>
 
   <nav>
     <a href="#about">Nostros</a>
@@ -29,6 +29,26 @@ import { ToggleMenu } from './ToggleMenu'
     z-index: 10;
     position: relative;
   } 
+
+  .tel {
+    color: transparent;
+    font-size: 0rem;
+  }
+
+  :global(.tel svg) {
+    color: var(--grey);
+    font-size: 3rem;
+  }
+
+  :global(button.burger) {
+    color: transparent;
+    font-size: 0rem;
+  }
+
+  :global(button.burger svg) {
+    color: var(--grey);
+    font-size: 3rem;
+  }
 
   .telephone {
     display: none;
