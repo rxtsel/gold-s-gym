@@ -2,12 +2,12 @@
 import data from '../data/plans.json'
 ---
 
-<section>
+<section id="plans">
   <h2>Nuestros <span>planes</span></h2>
   <div class="grid">
     {
       data.map(({price, img, month, list ,link}) => (
-        <div class="card">
+        <div class='card'>
 
           <div class="img-content">
             <p class="price">{price}<small>$</small></p>
@@ -45,6 +45,7 @@ import data from '../data/plans.json'
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 5rem;
+    position: relative;
   }
 
   span {
@@ -144,6 +145,40 @@ import data from '../data/plans.json'
     margin: 2rem 0 4rem;
     width: 100%;
     max-width: 20rem;
+  }
+
+  @media (min-width: 768px) {
+    
+    section {
+      padding:  8rem 0 4rem;
+    }
+
+    h2::before {
+      content: "PLANES";
+      font-size: 21.5rem;
+      font-weight: var(--light);
+      color: transparent;
+      font-family: var(--secondary-font);
+      background: linear-gradient(90deg,var(--primary-color) 0%,var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px var(--orange);
+      position: absolute;
+      top: -14rem;
+      right: -23rem;
+      z-index: 1;
+      opacity: .1;
+    }
+
+    .grid {
+      padding: 5rem 0;
+    }
+
+   .card:nth-child(2) {
+      transform: translateY(-5rem);
+      border: 1px solid var(--orange);
+    } 
+
   }
 
 </style>
