@@ -1,18 +1,18 @@
 [
   {
-    "img": "/img/profile-1.webp",
+    "img": "img/profile-1.webp",
     "name": "John Doe",
     "job": "Client",
     "description": "Un gimnasio genial. En seis meses de entrenamiento con un entrenador, he conseguido unos resultados que no podría conseguir en 3 años de entrenamiento independiente."
   },
   {
-    "img": "/img/profile-2.webp",
+    "img": "img/profile-2.webp",
     "name": "Camille Dallas",
     "job": "Client",
     "description": "He estado entrenando en este gimnasio durante 3 años. Los entrenadores son muy profesionales y siempre están dispuestos a ayudar. El gimnasio está muy bien equipado y siempre está limpio."
   },
   {
-    "img" : "/img/profile-3.webp",
+    "img" : "img/profile-3.webp",
     "name": "Aron Thompson",
     "job": "Client",
     "description": "Perfecto para los que quieren entrenar en un gimnasio con un entrenador personal. Los entrenadores son muy profesionales y siempre están dispuestos a ayudar. El gimnasio está muy bien equipado y siempre está limpio."

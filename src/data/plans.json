@@ -1,21 +1,21 @@
 [
   {
     "price": 9,
-    "img": "/img/card-1.webp",
+    "img": "img/card-1.webp",
     "month": 1,
     "list": [10, 5, 1],
     "link": "#"
   },
   {
     "price": 39,
-    "img": "/img/card-2.webp",
+    "img": "img/card-2.webp",
     "month": 6,
     "list": [60, 30, 6],
     "link": "#"
   },
   {
     "price": 99,
-    "img": "/img/card-3.webp",
+    "img": "img/card-3.webp",
     "month": 12,
     "list": ["SIN LÍMITE", "SIN LÍMITE", "SIN LÍMITE"],
     "link": "#"
