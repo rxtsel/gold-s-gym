@@ -7,6 +7,5 @@ import react from '@astrojs/react'
 export default defineConfig({
   integrations: [react()],
   site: 'https://rxtsel.github.io',
-  base: '/'
+  base: '/gold-s-gym'
 })
-
